@@ -1,8 +1,6 @@
-# 💰 FinTracker - Personal Finance Tracker (REST API)
-
-FinTracker is a Spring Boot based REST API that allows users to manage their personal income and expense transactions.
-
-The application supports user registration, login, transaction management, and dashboard summary calculation.
+# 💰 FinTracker – Personal Finance Tracker (REST API)
+FinTracker is a backend REST API application built using Spring Boot that helps users manage their personal finances by tracking income and expense transactions.
+The system allows users to register, log in, manage financial transactions, and view a dashboard summary of their financial activity.
 
 ---
 
@@ -36,7 +34,10 @@ The project follows a layered architecture:
 
 Controller → Service → Repository → Database
 
-This ensures clean structure and separation of concerns.
+This ensures clean structure and separation of concerns.The project follows a layered architecture:
+
+Controller → Service → Repository → Database
+This architecture helps maintain clean code, separation of concerns, and easier maintenance.
 
 ---
 
@@ -55,6 +56,47 @@ This ensures clean structure and separation of concerns.
 - `DELETE /transactions/{id}`
 
 ---
+## 📁 Project Structure
+
+controller
+service
+repository
+entity
+dto
+mapper
+exception
+
+
+---
+
+## 🗃 Database Entities
+`User
+
+
+id
+name
+email
+password
+
+`Transaction
+
+id
+amount
+type (INCOME / EXPENSE)
+description
+date
+userId
+
+---
+
+## 📚 What I Learned
+Designing RESTful APIs using Spring Boot
+Implementing layered architecture
+Using DTO and MapStruct for data mapping
+Working with relational databases using Spring Data JPA
+Implementing business logic for financial dashboard summaries
+
+---
 
 ## ⚙️ How to Run
 
@@ -64,6 +106,7 @@ This ensures clean structure and separation of concerns.
 4. Test APIs using Postman
 
 ---
+
 
 ## 🗄 Database Configuration Example
 
