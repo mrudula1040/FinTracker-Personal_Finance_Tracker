@@ -2,7 +2,7 @@
 FinTracker is a backend REST API application built using Spring Boot that helps users manage their personal finances by tracking income and expense transactions.
 The system allows users to register, log in, manage financial transactions, and view a dashboard summary of their financial activity.
 
----
+----
 
 ## 🚀 Features
 
@@ -15,7 +15,7 @@ The system allows users to register, log in, manage financial transactions, and 
 - Delete Transaction
 - Dashboard Summary (Total Income, Total Expense, Balance)
 
----
+---- 
 
 ## 🛠 Tech Stack
 
@@ -26,7 +26,7 @@ The system allows users to register, log in, manage financial transactions, and 
 - MapStruct
 - Maven
 
----
+----
 
 ## 🏗 Architecture
 
@@ -39,7 +39,7 @@ This ensures clean structure and separation of concerns.The project follows a la
 Controller → Service → Repository → Database
 This architecture helps maintain clean code, separation of concerns, and easier maintenance.
 
----
+----
 
 ## 📌 API Endpoints
 
@@ -55,7 +55,7 @@ This architecture helps maintain clean code, separation of concerns, and easier 
 - `PUT /transactions/{id}`
 - `DELETE /transactions/{id}`
 
----
+----
 ## 📁 Project Structure
 
 controller
@@ -67,7 +67,7 @@ mapper
 exception
 
 
----
+----
 
 ## 🗃 Database Entities
 `User
@@ -87,17 +87,36 @@ description
 date
 userId
 
----
+----
+
+## 🧪 API Testing
+
+- Tested all REST APIs using Postman
+- Verified HTTP status codes (200, 400, 401, 404)
+- Validated request and response data
+- Tested user authentication (login & registration)
+- Checked edge cases like:
+  - Invalid login credentials
+  - Duplicate email registration
+  - Invalid transaction inputs
+- Verified business logic (income, expense, balance calculation)
+
+----
 
 ## 📚 What I Learned
-Designing RESTful APIs using Spring Boot
-Implementing layered architecture
-Using DTO and MapStruct for data mapping
-Working with relational databases using Spring Data JPA
-Implementing business logic for financial dashboard summaries
 
----
+Through this project, I gained hands-on experience in:
 
+- Designing and developing RESTful APIs using Spring Boot
+- Implementing layered architecture (Controller, Service, Repository)
+- Handling data transfer using DTO and MapStruct
+- Managing relational databases with Spring Data JPA
+- Writing business logic for financial calculations (income, expense, balance)
+- Performing API testing using Postman
+- Validating API responses, status codes, and edge cases
+- Understanding how backend development and testing work together to ensure application quality
+
+----
 ## ⚙️ How to Run
 
 1. Clone the repository
@@ -105,8 +124,7 @@ Implementing business logic for financial dashboard summaries
 3. Run the Spring Boot application
 4. Test APIs using Postman
 
----
-
+----
 
 ## 🗄 Database Configuration Example
 
