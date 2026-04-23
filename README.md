@@ -1,6 +1,6 @@
 # 💰 FinTracker – Personal Finance Tracker (REST API)
 FinTracker is a backend REST API application built using Spring Boot that helps users manage their personal finances by tracking income and expense transactions.
-The system allows users to register, log in, manage financial transactions, and view a dashboard summary of their financial activity.
+The system allows users to register, log in, manage financial transactions, and view a dashboard summary of their financial activity
 
 ----
 
